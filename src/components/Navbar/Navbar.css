@@ -27,12 +27,12 @@
     font-weight: 500;
 }
 
-.hamburger {
+.iconNavbar {
     display: none;
 }
 
 @media screen and (max-width:1240px) {
-    .hamburger {
+    .iconNavbar {
         display: block;
     }
 

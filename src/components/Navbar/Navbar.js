@@ -12,21 +12,21 @@ const Navbar = () => {
       <Link to="/">
         <h1>Maique Moraes</h1>
       </Link>
-      <ul className="nav-menu">
+      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li>
           <Link to="/">Início</Link>
         </li>
         <li>
-          <Link to="/pricing">Preço</Link>
+          <Link to="/projects">Projetos</Link>
         </li>
         <li>
-          <Link to="/training">Treino</Link>
+          <Link to="/me">Quem sou eu?</Link>
         </li>
         <li>
           <Link to="/contact">Contato</Link>
         </li>
       </ul>
-      <div className="hamburguer" onClick={handleClick}>
+      <div className="iconNavbar" onClick={handleClick}>
         {click ? (
           <FaTimes size={20} style={{ color: "#fff" }} />
         ) : (
